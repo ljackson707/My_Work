@@ -95,3 +95,73 @@ Kubernetes (Host docker appliction in form of docker containers.)
 - kubect1 run 
 - kubec1 cluster-info
 - kubec1 get-nodes
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+AWS 
+
+- AWS Notes
+
+
+Server ------> Laptop or Desktop (Consumer grade)
+
+Compute - Client / Server Computing
+Web Server -----> Client Application 
+
+IP layout
+~~~~~~~~~
+
+192.168.0.1
+
+192.168.0 (Network ID)
+
+.1 (Host ID)
+
+168.0 (Subnet Mask - Used to define the newtork and host ID in Binanry)
+
+Ip subnet calcualtor (tool to find how many total addresses are avalible in an IP)
+
+Virtualization
+~~~~~~~~~~~~~~
+
+Virtual Machines 
+
+- Hypervisor
+    - creates a layer of abstractionb to the Virtual Machine.(allocation of resources such as ram and os.)
+
+Docker Containers 
+
+- Docker Engine
+    - (runs ontop of windows or linix, ontop of this is a container that has all the nessassry requiments to run java or python or sql.)
+
+RESTful API
+- uses HTTP protocol.
+- comunicates with websites, application, or database server.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+CRM - Customer Relationship Management(CRM)
+
+aws ec2 run-instance (runs a aws server)
+
+PaaS (Platform as a service)
+
+SaaS (Software as a Service)
+
+*Stateless application
+- News site where users do not need to login.
+
+*Statefull appliction
+- User needs to login to giver user details.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+AWS Amazon Web Services
+
+- AWS Global Infrastructure
+    - Avalibility Zones
+    - Regions( has atleast 2 AZs in it)
+    - Each region is independent of each others
+    - There are 24 regions around the world
+
+- 
