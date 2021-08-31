@@ -164,4 +164,54 @@ AWS Amazon Web Services
     - Each region is independent of each others
     - There are 24 regions around the world
 
-- 
+- (NAT) Network Address Translation (How to connect outbound to internet)
+
+- (AMI) Amazon Machine Image
+    - Intance type (pick from Family, Type, vCPUs, and Memory in GiB)
+
+* Look over Section 6: Amazon Elastic Compite Cloud (EC2)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Instance Startup (Creates a simple webpage)
+
+#!/bin/bash
+yum update -y
+yum install httpd -y
+systemctl start httpd
+systemctl enable httpd
+cd /var/www/html
+echo "This is a test page running on Apache on EC2 in the AWS cloud" > index.html
+
+# Test wuth this command:
+curl http://169.254.169.254/latest/user-data
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+EBS - is persistant
+
+Instance Store - is not persitant
+
+A snapshot allows you to back up an instance volume. (PIT - point in time back up - updates every few min)
+
+(RDS) - managed Relational Database system.
+
+Types of RDS services
+
+    - Amazon Aurora
+    - MySQL
+    - MariaDB
+    - Oracle
+    - MS SQL Server
+    - PostgreSQL
+
+
+AWS Elastic Beanstalk
+
+- creates load balancer, auto scaling, and instances so the application can run
+
+- used to build web aplications
+
+AWS Lambda 
+
+- Serverless - code sits on lambda and then once an event occurse (trigger) then labmbda activates and executes the functions. 
