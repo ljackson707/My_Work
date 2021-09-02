@@ -16,7 +16,24 @@ C and GO do not support OOP
 Global pattern flags
 g modifier: global. All matches (don't return after first match)
 m modifier: multi line. Causes ^ and $ to match the begin/end of each line (not only begin/end of string)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+class Email:
+    def __init__(self, subject, body):
+        self.subject = subject
+        self.body = body
+
+    def send(self, to):
+        print("Sending email with subject: {self.subject} and body: {self.body} to: {self.to}")
+
+        
+        
+if __name__ == "__main__":
+    greeting_email = Email("Welcome!", "Welcome to epicpython.io!")
+    greeting_email.subject = "Greeting"
+    greeting_email.send('bob@nasa.gov')
+    greeting_email.send('liz@buckingham.uk')
+    
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Docker Notes
