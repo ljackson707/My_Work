@@ -232,3 +232,5 @@ AWS Elastic Beanstalk
 AWS Lambda 
 
 - Serverless - code sits on lambda and then once an event occurse (trigger) then labmbda activates and executes the functions. 
+
+
