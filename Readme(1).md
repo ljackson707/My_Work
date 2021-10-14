@@ -16,9 +16,8 @@ from si_final import *
 
 Run the get_dir() function first to get a list of the files within your assigned directory.
 
-### In order for this program to work you must copy the list of files returned by the get_dir() function and paste them into the si_final.py file under the variable asignment named files, then save the si_final.py file and restart your terminal/notebook and continue to run all other functions.
-
 ## list of functions available: 
+- get_dir()
 - get_names() 
 - get_roles()
 - get_skills()
